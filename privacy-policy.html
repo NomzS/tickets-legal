@@ -17,8 +17,8 @@
     <p class="eyebrow"><a href="index.html">Memory Tickets</a></p>
     <h1 data-t-en="Privacy Policy" data-t-pl="Polityka prywatności">Privacy Policy</h1>
     <p class="updated"
-       data-t-en="Last updated: 15 August 2026"
-       data-t-pl="Ostatnia aktualizacja: 15 sierpnia 2026">Last updated: 15 August 2026</p>
+       data-t-en="Last updated: 27 August 2026"
+       data-t-pl="Ostatnia aktualizacja: 27 sierpnia 2026">Last updated: 27 August 2026</p>
     <div class="langbar">
       <button type="button" data-set-lang="en" aria-pressed="true">English</button>
       <button type="button" data-set-lang="pl" aria-pressed="false">Polski</button>
@@ -50,20 +50,45 @@
         (language, paper theme, Pro unlock status) are stored locally in the app's
         sandboxed storage on your device.</li>
     </ul>
-    <p>None of the above is transmitted to us or to any third party. The app functions
-      fully offline.</p>
+    <p>Your tickets, photos and notes are never sent to us — we have no servers to
+      receive them. Two features do reach the internet, and only these two: the banner
+      ads shown to free users, and the location suggestions that appear while you type a
+      place name. Both are described below. Everything else in the app works offline.</p>
 
     <h2>Advertising</h2>
     <p>The free version of Memory Tickets shows banner ads, served by Google AdMob, to
       support the app. We use <strong>non-personalized</strong> ads — we do not build an
       advertising profile of you, and we do not request cross-app tracking permission
-      (App Tracking Transparency) because we don't need it for this. AdMob may still
-      process limited technical data (such as your general IP-based region and device
-      type) to serve and measure ads and to prevent fraud; this is handled directly
-      between your device and Google, under
-      <a href="https://policies.google.com/privacy">Google's own privacy policy</a>.
-      Purchasing “Memory Tickets Pro” or “Remove Ads” (see below) removes ads
-      immediately.</p>
+      (App Tracking Transparency) because we don't need it for this. Non-personalized does not mean
+      no data at all. To show and measure those ads, the Google Mobile Ads SDK collects a
+      limited set of technical data directly from your device:</p>
+    <ul>
+      <li>a <strong>resettable advertising identifier</strong> (you can reset or limit it
+        in your device settings);</li>
+      <li>your <strong>approximate region</strong>, derived from your IP address — not
+        precise location;</li>
+      <li><strong>device and performance information</strong> (device model, OS version,
+        and how the ad rendered);</li>
+      <li><strong>how you interact with the ad</strong>, and crash diagnostics from the
+        ad component.</li>
+    </ul>
+    <p>This is handled directly between your device and Google, under
+      <a href="https://policies.google.com/privacy">Google's own privacy policy</a> —
+      none of it reaches us, and we could not access it if we wanted to. Google declares
+      the same list in the SDK's own privacy manifest, which is why it also appears in
+      our App Store and Google Play data disclosures. Purchasing “Memory Tickets Pro” or
+      “Remove Ads” (see below) removes ads immediately, and with them this data
+      collection.</p>
+
+    <h2>Location suggestions</h2>
+    <p>When you type a place into a ticket's location field, the app asks the operating
+      system for matching suggestions — Apple's MapKit on iOS, Android's geocoder on
+      Android. This means the text you have typed so far is sent to Apple or Google so
+      they can look up matches. It does not go to us, and the app does not keep it beyond
+      the ticket you choose to save.</p>
+    <p>You never have to use a suggestion. Whatever you type stands on its own, so you can
+      ignore the list entirely and the field still works — including with no connection at
+      all.</p>
 
     <h2>In-app purchases and subscriptions</h2>
     <p>Memory Tickets offers:</p>
@@ -90,16 +115,19 @@
 
     <h2>Data sharing</h2>
     <p>We do not sell, rent, or share your ticket data, because we never receive it in
-      the first place — it never leaves your device. The one exception is the ad serving
-      described above: Google AdMob (for free-tier users only) processes limited
-      technical data directly on-device/in-transit to serve non-personalized ads, under
-      its own privacy policy. We do not use any analytics SDKs, and there are no other
-      third-party trackers in the app.</p>
+      the first place. The exceptions are the two cases described above — advertising
+      (free tier only) and location suggestions — where data goes directly from your
+      device to Google or Apple under their own privacy policies, never through us. We do
+      not use any analytics SDKs, and the app embeds no third-party SDKs other than
+      Google's advertising and consent components and the two app stores' own billing
+      libraries.</p>
 
     <h2>Children's privacy</h2>
-    <p>Memory Tickets is not directed at children and does not knowingly collect any
-      information from anyone, regardless of age — because it does not collect
-      information at all.</p>
+    <p>Memory Tickets is not directed at children, and we do not knowingly collect
+      information about anyone, regardless of age — we receive no personal data at all.
+      Note that the free version's advertising component does collect the limited
+      technical data listed under “Advertising” above; purchasing Pro or Remove Ads
+      removes it.</p>
 
     <h2>Deleting your data</h2>
     <p>Since everything is stored locally, uninstalling the app permanently deletes all
@@ -144,21 +172,48 @@
         (język, motyw papieru, status Pro) przechowywane są lokalnie, w wydzielonej
         pamięci aplikacji na Twoim urządzeniu.</li>
     </ul>
-    <p>Żadna z tych rzeczy nie jest przesyłana do nas ani do jakiejkolwiek strony
-      trzeciej. Aplikacja działa w pełni offline.</p>
+    <p>Twoje bilety, zdjęcia i notatki nigdy nie trafiają do nas — nie mamy serwerów,
+      które mogłyby je odebrać. Dwie funkcje łączą się z internetem i tylko te dwie:
+      baner reklamowy pokazywany w wersji bezpłatnej oraz podpowiedzi lokalizacji
+      pojawiające się podczas wpisywania nazwy miejsca. Obie opisujemy poniżej. Cała
+      reszta aplikacji działa offline.</p>
 
     <h2>Reklamy</h2>
     <p>Bezpłatna wersja Memory Tickets wyświetla banery reklamowe serwowane przez Google
       AdMob, które wspierają rozwój aplikacji. Używamy reklam
       <strong>niespersonalizowanych</strong> — nie budujemy Twojego profilu reklamowego
       i nie prosimy o zgodę na śledzenie między aplikacjami (App Tracking Transparency),
-      ponieważ nie jest nam ona do tego potrzebna. AdMob może mimo to przetwarzać
-      ograniczone dane techniczne (takie jak przybliżony region wynikający z adresu IP
-      czy typ urządzenia), aby wyświetlać i mierzyć reklamy oraz zapobiegać nadużyciom;
-      odbywa się to bezpośrednio między Twoim urządzeniem a Google, na zasadach
-      <a href="https://policies.google.com/privacy">polityki prywatności Google</a>.
-      Zakup „Memory Tickets Pro” lub „Usuń reklamy” (patrz niżej) natychmiast usuwa
-      reklamy.</p>
+      ponieważ nie jest nam ona do tego potrzebna. Niespersonalizowane nie
+      oznacza jednak „bez żadnych danych”. Aby wyświetlić i zmierzyć te reklamy, pakiet
+      Google Mobile Ads pobiera z Twojego urządzenia ograniczony zestaw danych
+      technicznych:</p>
+    <ul>
+      <li><strong>resetowalny identyfikator reklamowy</strong> (możesz go zresetować lub
+        ograniczyć w ustawieniach urządzenia);</li>
+      <li><strong>przybliżony region</strong> ustalony na podstawie adresu IP — nie
+        dokładną lokalizację;</li>
+      <li><strong>informacje o urządzeniu i jego wydajności</strong> (model, wersja
+        systemu, sposób wyrenderowania reklamy);</li>
+      <li><strong>sposób interakcji z reklamą</strong> oraz dane diagnostyczne awarii
+        komponentu reklamowego.</li>
+    </ul>
+    <p>Odbywa się to bezpośrednio między Twoim urządzeniem a Google, na zasadach
+      <a href="https://policies.google.com/privacy">polityki prywatności Google</a> —
+      nic z tego do nas nie trafia i nie moglibyśmy uzyskać do tego dostępu, nawet
+      gdybyśmy chcieli. Google deklaruje tę samą listę we własnym manifeście prywatności
+      pakietu, dlatego pojawia się ona również w naszych deklaracjach danych w App Store
+      i Google Play. Zakup „Memory Tickets Pro” lub „Usuń reklamy” (patrz niżej)
+      natychmiast usuwa reklamy, a wraz z nimi to zbieranie danych.</p>
+
+    <h2>Podpowiedzi lokalizacji</h2>
+    <p>Gdy wpisujesz miejsce w pole lokalizacji biletu, aplikacja prosi system operacyjny
+      o pasujące podpowiedzi — MapKit firmy Apple na iOS, geokoder Androida na
+      Androidzie. Oznacza to, że wpisany dotąd tekst trafia do Apple lub Google, aby
+      wyszukać dopasowania. Nie trafia do nas, a aplikacja nie przechowuje go poza
+      biletem, który zdecydujesz się zapisać.</p>
+    <p>Nigdy nie musisz korzystać z podpowiedzi. To, co wpiszesz, jest wystarczające samo
+      w sobie, więc możesz całkowicie zignorować listę, a pole nadal zadziała — również
+      bez połączenia z internetem.</p>
 
     <h2>Zakupy w aplikacji i subskrypcje</h2>
     <p>Memory Tickets oferuje:</p>
@@ -187,17 +242,18 @@
 
     <h2>Udostępnianie danych</h2>
     <p>Nie sprzedajemy, nie wynajmujemy ani nie udostępniamy danych Twoich biletów,
-      ponieważ nigdy ich nie otrzymujemy — nie opuszczają one Twojego urządzenia.
-      Jedynym wyjątkiem jest opisane wyżej serwowanie reklam: Google AdMob (wyłącznie
-      dla użytkowników wersji bezpłatnej) przetwarza ograniczone dane techniczne
-      bezpośrednio na urządzeniu i w trakcie przesyłu, aby wyświetlać reklamy
-      niespersonalizowane, na zasadach własnej polityki prywatności. Nie używamy żadnych
-      SDK analitycznych i w aplikacji nie ma żadnych innych mechanizmów śledzących.</p>
+      ponieważ w ogóle ich nie otrzymujemy. Wyjątkiem są dwie sytuacje opisane wyżej —
+      reklamy (tylko wersja bezpłatna) oraz podpowiedzi lokalizacji — w których dane
+      trafiają bezpośrednio z Twojego urządzenia do Google lub Apple, na zasadach ich
+      własnych polityk prywatności, nigdy za naszym pośrednictwem. Nie używamy żadnych
+      SDK analitycznych, a aplikacja nie zawiera zewnętrznych pakietów innych niż
+      komponenty reklamowe i zgód Google oraz biblioteki płatności obu sklepów.</p>
 
     <h2>Prywatność dzieci</h2>
-    <p>Memory Tickets nie jest skierowane do dzieci i świadomie nie zbiera żadnych
-      informacji od nikogo, niezależnie od wieku — ponieważ w ogóle nie zbiera
-      informacji.</p>
+    <p>Memory Tickets nie jest skierowane do dzieci i nie zbieramy świadomie informacji
+      o nikim, niezależnie od wieku — nie otrzymujemy żadnych danych osobowych. Pamiętaj,
+      że komponent reklamowy w wersji bezpłatnej pobiera ograniczone dane techniczne
+      wymienione wyżej w sekcji „Reklamy”; zakup Pro lub „Usuń reklamy” to eliminuje.</p>
 
     <h2>Usuwanie danych</h2>
     <p>Ponieważ wszystko przechowywane jest lokalnie, odinstalowanie aplikacji trwale
